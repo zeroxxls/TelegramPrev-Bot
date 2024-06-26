@@ -20,7 +20,6 @@ bot.hears(['HTML', 'CSS', 'JavaScript', 'React', 'Случайный Вопро�
     const topic = ctx.message.text.toLowerCase();
     let question;
     let questionTopic; // Для использования в InlineKeyboard
-
     if (topic === 'случайный вопрос') {
         question = getRandomQuestionFromAllTopics();
         questionTopic = question.topic; // Получаем тему из случайного вопроса
